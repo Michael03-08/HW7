@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         int toadEyesCount = 0;          //Жабьи глаза
@@ -5,7 +7,12 @@ public class Main {
         int ravenBonesCount = 0;        //Кости ворона
         int dumplingsCount = 0;         //Пельмени(а почему, собственно нет? xD )
 
+        Scanner scanner = new Scanner(System.in);
         //todo реализовать ввод пользователем кол-ва ингредиентов.
+        boolean inContinium = true;
+            int input = scanner.nextInt();
+            System.out.print("Введите колличество ингридиентов: ");
+               toadEyesCount = setText("Жабьи глаза:" + input);
 
         //Рецепты Эликсиров:
         // 1. 3 Жабьих глаза + 1 кость ворона - Эликсир зоркости
